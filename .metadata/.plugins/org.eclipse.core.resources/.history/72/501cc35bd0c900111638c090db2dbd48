@@ -1,0 +1,24 @@
+server:
+  port: 8082
+spring:
+  application:
+    name: BOOKING-SERVICE
+  datasource:
+    url: jdbc:mysql://${DB_HOST:localhost}:3306/fleet_booking_db?createDatabaseIfNotExist=true&serverTimezone=UTC
+    username: ${DB_USER:root}
+    password: Tridenthyper*189
+  jpa:
+    hibernate:
+      ddl-auto: update
+    open-in-view: false
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+jwt:
+  secret: ${JWT_SECRET:PS024-PrecisionAutoCare-Secret-Key-Change-Me-2026-Long}
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
