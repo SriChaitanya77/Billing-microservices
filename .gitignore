@@ -1,0 +1,18 @@
+# Eclipse workspace
+.metadata/
+
+# Eclipse project settings (optional)
+**/.classpath
+**/.project
+**/.settings/
+
+# Maven build output
+**/target/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# OS files
+.DS_Store
